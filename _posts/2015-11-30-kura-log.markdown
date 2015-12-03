@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Kura log"
+date:   2015-11-30 19:54:57
+tags: kura
+---
+Eclipse Kura is an OSGI based framework for "Internet of Things" gateways.
+Developing applications that run inside Kura is [pretty easy](https://wiki.eclipse.org/Kura/Getting_Started). But what about debugging? You can [debug remotely] (https://dev.eclipse.org/mhonarc/lists/kura-dev/msg00143.html) from Eclipse IDE, but this is not always possible. What if you are debugging network issues or some strange behaviour which depends on timing?
+Usually you write debug statements in your code. Sometimes, however, not all loggers have the desired level or there are too many lines scrolling.
+
+# Change log levels at runtime
+Kura actually uses SLF4j and Log4j to implement logging. Log4j allows logging levels to be changed at runtime.
+
+## From command line
+Access the OSGi console on a running Kura instance with `telnet <kura-ip-address> 5002` and use the following commands:  
+`getkuraloglevels` to list all loggers available and their level  
+`setkuraloglevel <loggername> <level>` to set the desired level  
+Available levels are **TRACE**, **DEBUG**, **INFO** (default), **WARN**, **ERROR** and **CRITICAL**.
+
+## Using a web browser
+Alternatively you can deploy [Kura Web Log](https://github.com/darugnaa/kura-web-log) bundle and then access it from your browser **http:/kura-ip-address/weblog**. You will see all available loggers. Just click the menu and select the new level to be set.  
+This way you can get only the relevant output and silence all services that just add noise.  
+
+<img src="http://i.imgur.com/88mNJfz.png?1" />
+

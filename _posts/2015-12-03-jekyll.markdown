@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Doctor Jekyll and Mister Blog"
+date: 2015-11-28 19:54:57
+tags: blog, jekyll
+---
+I've been looking around for blog engines since this summer. I don't like wordpress. Tumblr is a nice platform but too "social" and biased towards image sharing. This Github Pages thing thrilled me for a while and finally I got some time to try it out!
+
+I **love** having just a bunch of static files sitting in some directories. I can edit from any system, using any editor available, and have drafts and changes... living in another branch because it simply a Git repo.
+
+The engine itself is called [Jekyll](https://jekyllrb.com/). AFAIU it wraps a templating engine which _compiles_ markdown files to static HTML pages. Bells and whistles can be added like they are _source files_. Simply awesome.
+
+# Let's get started
+Nice and free theme installed. Content is coming!
+
