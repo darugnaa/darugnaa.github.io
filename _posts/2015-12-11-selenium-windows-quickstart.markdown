@@ -23,5 +23,17 @@ Firefox is the easiest browser to set up. After installing it, the following exa
 
 There is nothing else to do, Selenium will take care of everything.
 
+### Chrome
+Chrome requires a little bit of extra work. After installing the browser itself, you need to download a small executable called [ChromeDriver](http://chromedriver.storage.googleapis.com/index.html). This is a bridge between Selenium java driver and Chrome itself.  
+Download and unzip the latest version in a folder on your hard drive. Next, you have to tell Selenium driver where the ChromeDriver is located by setting `webdriver.chrome.driver` Java system property to ChromeDriver's path.
+
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.chrome.ChromeDriver;
+
+    System.getProperties().put("webdriver.chrome.driver", "c:\\Users\\you\\chromedriver.exe");
+    WebDriver driver = new ChromeDriver();
+    driver.get("http://docs.seleniumhq.org/");
+
+Selenium will start the ChromeDriver, connect to it and then control Chrome browser. The `webdriver.chrome.driver` can also be set in command line using `-Dwebdriver.chrome.driver=c:\\Users\\you\\chromedriver.exe` when invoking Java. In my quickstart project I set it in pom.xml and let Maven pass it to JVM.
 
 **this post is a work in progress**
