@@ -36,4 +36,20 @@ Download and unzip the latest version in a folder on your hard drive. Next, you 
 
 Selenium will start the ChromeDriver, connect to it and then control Chrome browser. The `webdriver.chrome.driver` can also be set in command line using `-Dwebdriver.chrome.driver=c:\\Users\\you\\chromedriver.exe` when invoking Java. In my quickstart project I set it in pom.xml and let Maven pass it to JVM.
 
+### Opera
+The procedure for Opera is the same as Chrome: download the [OperaDriver](https://github.com/operasoftware/operachromiumdriver/releases/) and unzip in the same folder as ChromeDriver. Set the `webdriver.opera.driver` Java system property using your preferred way and you're ready to go.
+
+    import org.openqa.selenium.opera.OperaDriver;
+
+    System.getProperties().put("webdriver.opera.driver", "c:\\Users\\you\\operadriver.exe");
+    WebDriver driver = new OperaDriver();
+
+### Internet Explorer
+Internet Explorer is no different from the other browsers this time. Download and unzip its [IEDriverServer](http://selenium-release.storage.googleapis.com/index.html), set `webdriver.ie.driver`, instantiate the InternetExplorerDriver in your code.
+
+    import org.openqa.selenium.ie.InternetExplorerDriver;
+
+    System.getProperties().put("webdriver.ie.driver", "c:\\Users\\you\\IEDriverServer.exe");
+    WebDriver driver = new InternetExplorerDriver();
+
 **this post is a work in progress**
