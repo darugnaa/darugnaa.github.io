@@ -52,4 +52,16 @@ Internet Explorer is no different from the other browsers this time. Download an
     System.getProperties().put("webdriver.ie.driver", "c:\\Users\\you\\IEDriverServer.exe");
     WebDriver driver = new InternetExplorerDriver();
 
-**this post is a work in progress**
+### HtmlUnit
+HtmlUnit is a special kind of browser: it is "headless", meaning that it uses no screen. It's purspose is to be runned on machines that have no GUI (like most Linux servers) or no users logged in.  
+It has some limitations on Javascript, I advise against using it on Javascript heavy sites.
+
+    import org.openqa.selenium.WebDriver;
+    import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
+    WebDriver driver = new HtmlUnitDriver(true);
+    driver.get("http://docs.seleniumhq.org/");
+
+# Summary
+Setting up Selenium with Java binding requires only a few lines of code. You can clone this [selenium-windows-quickstart](https://github.com/darugnaa/selenium-windows-quickstart/) project and start driving your browser of choice!  
+Don't like Java? Python quickstart is coming soon! =)
