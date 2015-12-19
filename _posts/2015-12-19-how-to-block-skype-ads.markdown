@@ -13,10 +13,12 @@ Fortunately there's a way to block ads inside Skype (and save some RAM too). Ads
 **1.** Locate the "hosts" file: `/etc/hosts/` on \*nixes, `%SystemRoot%\system32\drivers\etc\hosts` on Windows.  
 **2.** Open the "hosts" file with a text editor (Notepad on Windows will work). Run the editor as administrator.  
 **3.** Add the following lines and save the file
+
     # Block Skype banner ads
     127.0.0.1   rad.msn.com
     127.0.0.1   g.msn.com
     127.0.0.1   live.rads.msn.com
+
 **4.** Only for Windows: click "Start", then "Run", paste this command: `ipconfig /flushdns` and click OK.  
 **5.** Start Skype and enjoy the ad-free "Skype Home".
 
