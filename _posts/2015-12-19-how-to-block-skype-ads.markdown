@@ -23,5 +23,6 @@ Fortunately there's a way to block ads inside Skype (and save some RAM too). Ads
 **5.** Start Skype and enjoy the ad-free "Skype Home".
 
 <img src="http://i.imgur.com/nxkIXNb.png">
+
 As a bonus, RAM usage has decreased a little =)  
 This technique works on all Operating Systems. Different Skype versions may show "Skype Home not available" instead of not displaying the banner.
