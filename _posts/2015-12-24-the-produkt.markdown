@@ -15,12 +15,12 @@ What's so special about it? It's an executable file smaller than 65536 bytes. Ab
 
 If you know a little about programming and 3D graphics you are going to ask yourself **how** all of this can be compressed into 64KiB. Textures take space, meshes take space, music, meta data, all takes space... compression alone isn't enough.
 
-In [http://www.theproduct.de/text.html](one of the sites) lies the explanation. *There's no compression*.  
-* Textures are not stored, they are generated: the executable stores the algorithms used to paint textures. (this is done in the initial loading)
-* Meshes are generated with primitives (cubes, spheres, triangles) attached together and animated.
-* Music is a MIDI track rendered by synthetizers.
-* The executable is stripped (all extra metadata is removed)
-* Data is stored and/or packed in custom formats
-* [There was still enough space for writing credits](http://www.theproduct.de/scro1.html)
+In [one of the dedicated sites](http://www.theproduct.de/text.html) lies the explanation. *There's no compression*.  
+- Textures are not stored, they are generated: the executable stores the algorithms used to paint textures. (this is done in the initial loading)
+- Meshes are generated with primitives (cubes, spheres, triangles) attached together and animated.
+- Music is a MIDI track rendered by synthetizers.
+- The executable is stripped (all extra metadata is removed)
+- Data is stored and/or packed in custom formats
+- [There was still enough space for writing credits](http://www.theproduct.de/scro1.html)
 
 It was Windows XP times when the demo came out. Now with Windows10 and DirectX11 the demo works but the full screen is cropped and I see the window title and borders ruining the black background. Anyway it's awesome. That's exactly what I admire: knowledge, hard work, good team and quality.
