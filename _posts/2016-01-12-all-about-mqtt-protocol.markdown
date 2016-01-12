@@ -38,20 +38,17 @@ If you wish to read more I suggest proceeding with "MQTT Essentials" by HiveMQ t
 There are some brokers that are public. They can be used by anyone for testing and development purposes. Be careful not to publish sensitive data!  
 Here it is a list of publicly available MQTT brokers. (checked on 2016-01-09)
 
-<table>
-<tr><th>Address</th><th>Port</th><th>Description</th></tr>
-<tbody>
-<tr><td>broker.mqttdashboard.com</td><td>1883</td><td>MQTT, not encrypted</td></tr>
-<tr><td>iot.eclipse.org</td><td>1883</td><td>MQTT, not encrypted</td></tr>
-<tr><td>iot.eclipse.org</td><td>8883</td><td>MQTT, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://iot.eclipse.org/iot.eclipse.org.crt)</td></tr>
-<tr><td>mq.thingmq.com</td><td>80</td><td>MQTT / Websockets, not encrypted</td></tr>
-<tr><td>mq.thingmq.com</td><td>1883</td><td>MQTT, not encrypted</td></tr> 
-<tr><td>mq.thingmq.com</td><td>8883</td><td>MQTT, encrypted SSL</td></tr>
-<tr><td>mqtt.kgbvax.net</td><td>1883</td><td>MQTT, not encrypted, max message size 64kiB</td></tr>
-<tr><td>mqtt.kgbvax.net</td><td>8083</td><td>MQTT / Websockets, not encrypted, max message size 64kiB</td></tr>
-<tr><td>test.mosquitto.org</td><td>1883</td><td>MQTT, not encrypted</td></tr>
-<tr><td>test.mosquitto.org</td><td>8883</td><td>MQTT, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://test.mosquitto.org/ssl/mosquitto.org.crt)</td></tr>
-<tr><td>test.mosquitto.org</td><td>8080</td><td>MQTT / Websockets, not encrypted</td></tr>
-<tr><td>test.mosquitto.org</td><td>8081</td><td>MQTT / Websockets, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://test.mosquitto.org/ssl/mosquitto.org.crt)</td></tr>
-</tbody>
-</table>
+ Address | Port | Description
+ --- | --- | ---
+broker.mqttdashboard.com | 1883 | MQTT, not encrypted
+iot.eclipse.org | 1883 | MQTT, not encrypted
+iot.eclipse.org | 8883 | MQTT, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://iot.eclipse.org/iot.eclipse.org.crt)
+mq.thingmq.com | 80 | MQTT / Websockets, not encrypted
+mq.thingmq.com | 1883 | MQTT, not encrypted 
+mq.thingmq.com | 8883 | MQTT, encrypted SSL
+mqtt.kgbvax.net | 1883 | MQTT, not encrypted, max message size 64 [KiB](https://en.wikipedia.org/wiki/Kibibyte)
+mqtt.kgbvax.net | 8083 | MQTT / Websockets, not encrypted, max message size 64kiB
+test.mosquitto.org | 1883 | MQTT, not encrypted
+test.mosquitto.org | 8883 | MQTT, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://test.mosquitto.org/ssl/mosquitto.org.crt)
+test.mosquitto.org | 8080 | MQTT / Websockets, not encrypted
+test.mosquitto.org | 8081 | MQTT / Websockets, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://test.mosquitto.org/ssl/mosquitto.org.crt)
