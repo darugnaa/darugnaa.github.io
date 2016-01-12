@@ -20,6 +20,7 @@ Protocol [specifications (v3.1.1)](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/m
 
 # MQTT Essentials
 If you wish to read more I suggest proceeding with "MQTT Essentials" by HiveMQ team.
+
 1. [Introducing MQTT](http://www.hivemq.com/blog/mqtt-essentials-part-1-introducing-mqtt)
 2. [Publish & Subscribe](http://www.hivemq.com/blog/mqtt-essentials-part2-publish-subscribe)
 3. [Client, Broker and Connection Establishment](http://www.hivemq.com/blog/mqtt-essentials-part-3-client-broker-connection-establishment)
