@@ -4,7 +4,7 @@ name: Alessandro
 description: Just my blog
 
 # url is currently only used only for the RSS feed in feed.xml
-url: http://scotte.github.io
+url: http://darugnaa.github.io
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
@@ -30,8 +30,6 @@ permalink: /:year/:month/:title
 paginate: 5
 
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
 
 exclude: ['README.md', 'LICENSE']
