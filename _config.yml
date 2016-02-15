@@ -29,7 +29,7 @@ comments: false
 permalink: /:year/:month/:title
 paginate: 5
 
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 
 exclude: ['README.md', 'LICENSE']

@@ -23,14 +23,16 @@ The split screen magic is done using [-new_console](https://conemu.github.io/en/
     cmd.exe /k ""%ConEmuBaseDir%\CmdInit.cmd"  -new_console:s50V"
     
 An alternative way would be to manually edit ConEmu's config file (default `C:\Program Files\ConEmu\ConEmu.xml`) and add the following piece:
-    
-    <key name="Task11" modified="2016-02-11 09:54:19" build="160124">
-        <value name="Name" type="string" data="{Shells::Due}"/>
-        <value name="Flags" type="dword" data="00000000"/>
-        <value name="Hotkey" type="dword" data="00000000"/>
-        <value name="GuiArgs" type="string" data=""/>
-        <value name="Cmd1" type="string" data="&gt; cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot;"/>
-        <value name="Cmd2" type="string" data="cmd.exe /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot;  -new_console:s50V&quot;"/>
-        <value name="Active" type="long" data="1"/>
-        <value name="Count" type="long" data="2"/>
-    </key>
+
+```xml    
+<key name="Task11" modified="2016-02-11 09:54:19" build="160124">
+    <value name="Name" type="string" data="{Shells::Due}"/>
+    <value name="Flags" type="dword" data="00000000"/>
+    <value name="Hotkey" type="dword" data="00000000"/>
+    <value name="GuiArgs" type="string" data=""/>
+    <value name="Cmd1" type="string" data="&gt; cmd.exe /k &quot;%ConEmuBaseDir%\CmdInit.cmd&quot;"/>
+    <value name="Cmd2" type="string" data="cmd.exe /k &quot;&quot;%ConEmuBaseDir%\CmdInit.cmd&quot;  -new_console:s50V&quot;"/>
+    <value name="Active" type="long" data="1"/>
+    <value name="Count" type="long" data="2"/>
+</key>
+```
