@@ -27,6 +27,7 @@ disqus: ''
 comments: false
 
 permalink: /:year/:month/:title
+gems: [jekyll-paginate]
 paginate: 5
 
 highlighter: rouge
