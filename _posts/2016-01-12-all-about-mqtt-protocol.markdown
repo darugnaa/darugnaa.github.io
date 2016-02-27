@@ -36,7 +36,7 @@ If you wish to read more I suggest proceeding with "MQTT Essentials" by HiveMQ t
 
 # Public brokers
 There are some brokers that are public. They can be used by anyone for testing and development purposes. Be careful not to publish sensitive data!  
-Here it is a list of publicly available MQTT brokers. (checked on 2016-01-09)
+Here it is a list of publicly available MQTT brokers. (checked on 2016-02-27)
 
  Address | Port | Description
  --- | --- | ---
@@ -50,5 +50,7 @@ mqtt.kgbvax.net | 1883 | MQTT, not encrypted, max message size 64 [KiB](https://
 mqtt.kgbvax.net | 8083 | MQTT / Websockets, not encrypted, max message size 64kiB
 test.mosquitto.org | 1883 | MQTT, not encrypted
 test.mosquitto.org | 8883 | MQTT, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://test.mosquitto.org/ssl/mosquitto.org.crt)
+test.mosca.io | 80 | MQTT / Websockets, not encrypted
+test.mosca.io | 1883 | MQTT, not encrypted
 test.mosquitto.org | 8080 | MQTT / Websockets, not encrypted
 test.mosquitto.org | 8081 | MQTT / Websockets, encrypted [TLS v1.2, v1.1 or v1.0 with x509 certificates](http://test.mosquitto.org/ssl/mosquitto.org.crt)
