@@ -1,8 +1,11 @@
 ---
-layout: default
+layout: archive
 ---
-
-<div class="well">
+<section id="archive" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Post archive</h2>
 {%for post in site.posts %}
     {% unless post.next %}
         <h1>{{ post.date | date: '%Y' }}</h1>
@@ -20,6 +23,10 @@ layout: default
 {% endfor %}
 </ul>
 </div>
+        </div>
+      </div>
+</section>
+
 <div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- alessandro blog -->
