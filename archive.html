@@ -1,37 +1,41 @@
 ---
 layout: archive
 ---
-<section id="archive" class="content-section text-center">
-      <div class="container">
+<section id="archive" >
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto">
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- alessandrodarugna_footer-1_AdSense3_970x90_as -->
+				<ins class="adsbygoogle"
+					 style="display:inline-block;width:970px;height:90px"
+					 data-ad-client="ca-pub-0441836954856060"
+					 data-ad-slot="8904337993"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Post archive</h2>
-{%for post in site.posts %}
-    {% unless post.next %}
-        <h1>{{ post.date | date: '%Y' }}</h1>
-        <ul>
-    {% else %}
-        {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-        {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-        {% if year != nyear %}
-            </ul>
-            <h1>{{ post.date | date: '%Y' }}</h1>
-            <ul>
-        {% endif %}
-    {% endunless %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
-{% endfor %}
-</ul>
-</div>
+			<div class="col-lg-8 mx-auto">
+				<h2>Post archive</h2>
+				{%for post in site.posts %}
+					{% unless post.next %}
+						<h1>{{ post.date | date: '%Y' }}</h1>
+						<ul>
+					{% else %}
+						{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+						{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+						{% if year != nyear %}
+							</ul>
+							<h1>{{ post.date | date: '%Y' }}</h1>
+							<ul>
+						{% endif %}
+					{% endunless %}
+					<li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d" }} - {{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+			</div>
         </div>
-      </div>
+    </div>
 </section>
-
-<div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- alessandro blog -->
-<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-0441836954856060" data-ad-slot="2146279995"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
