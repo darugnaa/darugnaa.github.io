@@ -1,6 +1,6 @@
 # Jekyll configuration
 
-name: Alessandro
+name: Alessandro's blog
 description: Thoughts on software development
 
 # url is currently only used only for the RSS feed in feed.xml
@@ -28,7 +28,7 @@ comments: false
 
 permalink: /:year/:month/:title
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 4
 
 highlighter: rouge
 markdown: kramdown

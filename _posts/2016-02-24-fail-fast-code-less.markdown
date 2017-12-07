@@ -15,7 +15,7 @@ it helps in reducing bugs and improves robustness. This sounds good but
 how to do it in practice? I would like to share my experience with you.
 
 
-# Configuration
+### Configuration
 Most applications need configuration, from a file or other sources. Often it
 gets complicated, long, and may be in a format prone to errors (ini files, java
 .properties). Environment variables can get messy too: you add one in the
@@ -31,7 +31,7 @@ cannot work correctly, so it's best to **stop when a configuration property
 is invalid or missing**. 
 
 
-# Log with *Five Ws* in mind
+### Log with *Five Ws* in mind
 Every configuration issue must be logged before stopping. This holds true for
 other issues as well. Logging is not as easy as it seems, I encountered many
 unhelpful lines like `An error occurred`. When writing a log statement it is
@@ -51,7 +51,7 @@ Good: `Configuration error in config.xml, property 'numThreads' must be an integ
 value '45t' not allowed.`
 
 
-# Global error handler
+### Global error handler
 Wrap units of execution in `try-catch` block (or the equivalent in your language
 of choice). For example web requests or background threads should be wrapped.
 First, you are free to throw exceptions without the fear of wreaking havoc on
@@ -60,7 +60,7 @@ when using third party libraries. Not every library correctly log unhandled
 exceptions, or they may get logged on another file or stream and pass unnoticed.
 
 
-# What's the price?
+### What's the price?
 The real price to pay for the ability to "fail fast" is not the time it takes
 to write log statemens or exception handling, as it may seem.
 The real price is gathering requirements. It's hard to decide what to do in
